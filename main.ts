@@ -1,5 +1,8 @@
+function go_straight () {
+    cuteBot.motors(43, 45)
+}
 input.onButtonPressed(Button.A, function () {
-    cuteBot.moveTime(cuteBot.Direction.forward, 10, 5)
+    go_straight()
 })
 basic.forever(function () {
 	
